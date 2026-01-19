@@ -233,23 +233,23 @@
           html: `
             <div style="
               position: relative;
-              width: 40px;
-              height: 40px;
+              width: 56px;
+              height: 56px;
               display: flex;
               align-items: center;
               justify-content: center;
             ">
               <div style="
                 position: absolute;
-                width: 40px;
-                height: 40px;
+                width: 56px;
+                height: 56px;
                 background: ${point.color};
                 border-radius: 50%;
                 opacity: 0.3;
                 animation: radar-pulse 2s ease-in-out infinite;
               "></div>
               <div style="
-                font-size: 24px;
+                font-size: 32px;
                 position: relative;
                 z-index: 1;
                 filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
@@ -262,8 +262,8 @@
               }
             </style>
           `,
-          iconSize: [40, 40],
-          iconAnchor: [20, 20],
+          iconSize: [56, 56],
+          iconAnchor: [28, 28],
         });
         
         L.marker([point.lat, point.lng], { icon: radarIcon })
